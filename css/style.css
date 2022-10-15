@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Page Header */
+
+#header {
+	background-size: cover;
+	background-position: center center;
+}
+
+.top-header {
+	background-color: #753680;
+	padding: 20px;
+	text-align: center;
+}
+
+.top-header img{
+	width: 10%;
+}
+
+/* Main Menu */
+
+#main-menu {
+	overflow: hidden;
+	background-color: rgb(195, 0, 167);
+}
+
+#main-menu .links{
+	display: flex;
+	justify-content: space-around;
+	margin: 0%;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	list-style: none;
+}
+
+.dropbtn, .homebtn {
+	font-size: 22px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 25px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#main-menu a:hover, .dropdown:hover .dropbtn {
+	background-color: rgb(47, 75, 207);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgb(195, 0, 167);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	list-style-type: none;
+}
+
+.dropdown-content a {
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+/* Main body */
+
+#mainbody {
+	text-align: center;
+	background-color: #edeeca;
+	padding: 10px;
+}
+
+#mainbody h1{
+	font-size: 230%;
+}
+
+#mainbody .intro {
+	font-size: 170%;
+}
+
+#mainbody p {
+	font-size: 150%;
+}
+
+.herebutton {
+	background-color: #1c87c9;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.herebutton:hover {
+	background-color: rgb(195, 0, 167);
+}
+
+/* Page Footer */
+
+#page-footer {
+	padding: 1.5em;
+	background-color: rgba(114, 114, 114, 0.767);
+
+}
+
+#secondary-menu li {
+	list-style: none;
+}
+
+#secondary-menu a {
+	color: white;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) {
+
+	/* Page Footer */
+
+	#secondary-menu {
+		display: flex;
+		justify-content: space-around;
+		margin: 0%;
+	}
+
+	#secondary-menu li {
+		float: left;
+		overflow: hidden;
+		list-style: none;
+	}
+
+	#secondary-menu a {
+		color: white;
+		padding: 25px;
+		text-decoration: none;
+	}
+
+}
